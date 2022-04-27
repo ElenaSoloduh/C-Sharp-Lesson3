@@ -66,7 +66,7 @@ namespace Homework3
                 for (int i = 0; i < rows; i++)
                 {
                     sum1 += matrixOfIntegers[i, i];
-                    sum2 += matrixOfIntegers[i, rows - i - 1];
+                    sum2 += matrixOfIntegers[i, columns - 1 - i];
                 }
                 Console.WriteLine("First diagonal: " + sum1);
                 Console.WriteLine("Second diagonal: " + sum2);
@@ -194,7 +194,6 @@ namespace Homework3
                 numberList.RemoveAt(index);
                 homework.PrintList(numberList);
             }
-
 
             //Dictionary
             Dictionary<int, string> zoo = new Dictionary<int, string>();
