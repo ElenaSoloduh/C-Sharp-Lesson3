@@ -106,9 +106,9 @@ namespace Homework3
             //Method 1
             List<int> sortedList = (List<int>)listOfNumbers;
             sortedList.Sort();
-            for (int i = 0; i < sortedList.Count; i++)
+            foreach (int number in sortedList)
             {
-                Console.Write(sortedList[i] + " ");
+                Console.Write(number + " ");
             }
             Console.WriteLine();
 
@@ -126,9 +126,9 @@ namespace Homework3
                 }
             }
 
-            for (int i = 0; i < listOfNumbers.Count; i++)
+            foreach (int number in listOfNumbers)
             {
-                Console.Write(listOfNumbers[i] + " ");
+                Console.Write(number + " ");
             }
             Console.WriteLine();
         }
